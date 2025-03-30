@@ -127,6 +127,7 @@ async function registerToolFromOperation(operationFileRelativePath: string) {
     }
 
     const headers = {
+      'Content-Type': 'application/json',
       ...(params.header || {}),
       ...securityHeadersObj,
     } as Record<string, string>
