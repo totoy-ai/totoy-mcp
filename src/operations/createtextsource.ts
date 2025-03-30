@@ -1,7 +1,7 @@
 import { z } from "zod"
 
-export const toolName = `createsource`
-export const toolDescription = `Creates a Document or Text Source`
+export const toolName = `createtextsource`
+export const toolDescription = `Creates a Text Source`
 export const baseUrl = `https://api.totoy.ai/v1`
 export const path = `/sources`
 export const method = `post`
@@ -13,6 +13,11 @@ export const security = [
     "envVarName": "API_KEY",
     "schemeType": "http",
     "schemeScheme": "bearer"
+  },
+  {
+    "key": "Content-Type",
+    "value": "application/json",
+    "in": "header",
   }
 ]
 

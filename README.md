@@ -50,7 +50,9 @@ Set the environment variable `OPEN_MCP_BASE_URL` to override each tool's base UR
 
 ### deleteknowledgebasesource
 
-### createsource
+### createtextsource
+
+### createdocumentsource
 
 ### listsources
 

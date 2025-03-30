@@ -1,5 +1,5 @@
-export const SERVER_NAME = "api_totoy_ai_v1";
-export const SERVER_VERSION = "0.0.1";
+export const SERVER_NAME = "totoy-mcp";
+export const SERVER_VERSION = "0.0.3";
 export const OPERATION_FILES_RELATIVE = [
     "./operations/createexplanation.js",
     "./operations/createknowledgebase.js",
@@ -12,7 +12,8 @@ export const OPERATION_FILES_RELATIVE = [
     "./operations/listknowledgebasesources.js",
     "./operations/getknowledgebasesource.js",
     "./operations/deleteknowledgebasesource.js",
-    "./operations/createsource.js",
+    "./operations/createtextsource.js",
+    "./operations/createdocumentsource.js",
     "./operations/listsources.js",
     "./operations/getsource.js",
     "./operations/modifysource.js",
