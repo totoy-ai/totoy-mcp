@@ -1,0 +1,42 @@
+{
+  "name": "@totoy/totoy-mcp",
+  "version": "0.0.2",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "api_totoy_ai_v1": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "clean": "rm -rf build",
+    "prebuild": "npm run clean && npm install --save-dev @wegotdocs/shared@latest",
+    "build": "tsc && chmod 755 build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "totoy",
+    "mcp",
+    "document-management",
+    "simplification",
+    "explanation",
+    "summarization",
+    "translation",
+    "accessibility",
+    "knowledge-bases",
+    "vector-database"
+  ],
+  "author": "Totoy GmbH",
+  "license": "ISC",
+  "description": "MCP Server for Totoy Document AI. Explain documents in simple, plain or detailed language and create Knowledge Bases from your documents in 19 languages.",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.11",
+    "@wegotdocs/shared": "^0.1.9",
+    "typescript": "^5.8.2"
+  }
+}
